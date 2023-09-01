@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Check out my solution on Front end mentor](https://your-solution-url.com)
-- Live Site URL: [Check out the live site](https://your-live-site-url.com)
+- Solution URL: [Check out my solution on Front end mentor](https://www.frontendmentor.io/solutions/newshompage-using-grid-and-flexbox-layout-tailwindcss-and-vanilla-js-OuNnb3fQDN)
+- Live Site URL: [Check out the live site](https://martinsgundi-news-homepage.netlify.app/)
 
 ## My process
 
