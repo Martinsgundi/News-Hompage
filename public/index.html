@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News homepage</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-neutral-offWhite font-Inter">
+    
+    <div class="w-[91%] pb-28 my-0 mx-auto md:w-[76%]"> <!-- content container -->
+
+        <nav id="nav">
+            <!-- Mobile Nav -->
+            <div class="flex justify-between my-8 md:hidden">
+                <!--Logo img-->
+                <div>
+                    <img class="w-12" src="assets/images/logo.svg" alt="W."/>
+                </div>
+
+                <!-- Open-menu-icon -->
+                <div class="self-end">
+                    <button id="open-menu-icon">
+                        <img src="assets/images/icon-menu.svg" alt="open-menu"/>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Overlay(Toggles body b-color when menu-btn is clicked) -->
+            <div id="overlay" class="fixed top-0 left-0 hidden w-full h-full bg-gray-950 bg-opacity-60">   
+            </div>
+            
+
+            <!-- Desktop Nav -->
+            <div class="items-center justify-between hidden mt-20 md:flex"> <!--Nav container-->
+
+                <div> <!--Left nav-->
+                   <!--Logo-img-->
+                    <img class="w-16" src="assets/images/logo.svg" alt="snap"/>
+                </div>
+
+                <div class="flex gap-9 text-neutral-darkGrayishBlue"> <!--Right nav-->
+                    <div> <button class="orange-hover">Home</button> </div>
+                    
+                    <div> <button class="orange-hover">New</button> </div>
+
+                    <div> <button class="orange-hover">Popular</button> </div>
+
+                    <div> <button class="orange-hover">Trending</button> </div>
+
+                    <div> <button class="orange-hover">Categories</button> </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Mobile menu container -->
+        <aside class=" md:hidden">
+            <div id="menu-container" class="bg-neutral-offWhite fixed right-[-70%] top-0 w-[70%] 
+                h-full transition-[right] duration-300 ease-out"> 
+
+                <!-- Close-menu-icon -->
+                <div class="flex justify-end my-6 mr-4">
+                    <button id="close-menu-icon">
+                        <img src="assets/images/icon-menu-close.svg"  alt="close-menu"/>               
+                    </button>
+                </div>
+
+                <div class="grid gap-5 mt-20 ml-6 text-neutral-veryDarkBlue"> <!--Menu items-->
+
+                    <div> <button>Home</button> </div>
+                    
+                    <div> <button>New</button> </div>
+
+                    <div> <button>Popular</button> </div>
+
+                    <div> <button>Trending</button> </div>
+
+                    <div> <button>Categories</button> </div>
+                </div>
+            </div>
+        </aside>
+
+
+
+        <main>
+            <div> <!--Main container--> 
+                <div class="grid mt-16 gap-7 md:grid-cols-3"> <!--Main primary-->
+
+                    <div class="md:hidden"> <!--M_web-3 image-->
+                        <img class="w-full" src="assets/images/image-web-3-mobile.jpg"/>
+                    </div>
+
+                    <div class="hidden md:block md:col-span-3 lg:col-span-2"> <!--D_web 3 image-->
+                        <img class="object-cover h-full" src="assets/images/image-web-3-desktop.jpg"/>
+                    </div> 
+
+                    <div class="flex flex-col gap-[1.1rem] mb-8 md:grid md:grid-cols-2 md:col-span-3 lg:col-span-2 lg:mb-0"> <!--Web-3 message-->
+                        <h1 class="text-neutral-veryDarkBlue font-extrabold text-[2.5rem]/[2.5rem] min-[768px]:text-[3rem]/[3rem] 
+                            min-[1170px]:text-[3.4rem]/[3.5rem] lg:self-center">
+                            The Bright Future of Web 3.0?
+                        </h1>
+
+                        <div class="md:w-[99%] lg:self-end md:ml-[0.3rem]">
+                            <p class="text-neutral-darkGrayishBlue text-[0.9375rem]/6 mb-3">
+                                We dive into the next evolution of the web that claims 
+                                to put the power of the platforms back into the hands 
+                                of the people. But is it really fulfilling its promise? 
+                            </p>
+ 
+                            <button class="v-dark-blue-hover text-neutral-offWhite uppercase text-sm text-center 
+                                tracking-[0.3em] font-bold bg-primary-softRed py-3 px-8 mt-6">
+                                Read more
+                            </button>
+                        </div>
+                    </div>
+
+                    <!--New messages-->
+                    <div class="px-5 py-5 bg-neutral-veryDarkBlue md:col-span-3 md:gap-12 md:py-8 lg:col-auto lg:col-start-3 lg:row-start-1 lg:row-span-2"> 
+                        <h1 class="text-3xl font-bold text-primary-softOrange mb-7 md:text-4xl">New</h1>
+
+                        <div class="border-b border-neutral-darkGrayishBlue pb-7 mb-7"> <!--Message-1-->
+                            <h2 class="mb-2 text-xl font-bold text-neutral-offWhite soft-orange-hover">
+                                Hydrogen VS Electric Cars
+                            </h2>
+
+                            <p class="text-neutral-grayishBlue text-[0.9375rem] w-[95%]">
+                                Will hydrogen-fueled cars ever catch up to EVs?
+                            </p>
+                        </div>
+
+                        <div class="border-b border-neutral-darkGrayishBlue pb-7 mb-7"> <!--Message-2-->
+                            <h2 class="mb-2 text-xl font-bold text-neutral-offWhite soft-orange-hover">
+                                The Downsides of AI Artistry
+                            </h2>
+
+                            <p class="text-neutral-grayishBlue text-[0.9375rem] w-[99%]">
+                                What are the possible adverse effects 
+                                of on-demand AI image generation?
+                            </p>
+                        </div>
+
+                        <div> <!--Message-3-->
+                            <h2 class="mb-2 text-xl font-bold text-neutral-offWhite soft-orange-hover">
+                                Is VC Funding Drying Up?
+                            </h2>
+
+                            <p class="text-neutral-grayishBlue text-[0.9375rem] w-[95%]">
+                                Private funding by VC firms is down 50% 
+                                YOY. We take a look at what that means.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid mt-[4.5rem] gap-9 min-[1000px]:gap-6 min-[1000px]:grid-cols-3"> <!--Main secondary-->
+                    <div class="main-sec-divs"> <!--PC news-->
+                        <div>
+                            <img class="w-full min-[1000px]:h-full object-cover" src="assets/images/image-retro-pcs.jpg" alt="Image of a Retro PC"/>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold text-neutral-grayishBlue">01</h2>
+                            <h3 class="py-2 text-lg font-extrabold orange-hover text-neutral-veryDarkBlue">
+                                Reviving Retro PCs
+                            </h3>
+                            <p class="text-neutral-darkGrayishBlue text-[0.9375rem]">
+                                What happens when old PCs 
+                                are given modern upgrades?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="main-sec-divs"> <!--Laptop news-->
+                        <div>
+                            <img class="w-full min-[1000px]:h-full object-cover" src="assets/images/image-top-laptops.jpg" alt="Image of a laptop keyboard"/>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold text-neutral-grayishBlue">02</h2>
+                            <h3 class="py-2 text-lg font-extrabold orange-hover text-neutral-veryDarkBlue">
+                                Top 10 Laptops of 2022
+                            </h3>
+                            <p class="text-neutral-darkGrayishBlue text-[0.9375rem]">
+                                Our best picks for various needs and budgets.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="main-sec-divs"> <!--Game news-->
+                        <div>
+                            <img class="w-full min-[1000px]:h-full object-cover" src="assets/images/image-gaming-growth.jpg" alt="Image of a game pad controller"/>
+                        </div>
+
+                        <div>
+                            <h2 class="text-3xl font-bold text-neutral-grayishBlue">03</h2>
+                            <h3 class="py-2 text-lg font-extrabold orange-hover text-neutral-veryDarkBlue">
+                                The Growth of Gaming
+                            </h3>
+                            <p class="text-neutral-darkGrayishBlue text-[0.9375rem]">
+                                How the pandemic has sparked fresh opportunities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <footer> <!-- Attribution -->
+        <div class="px-3 my-8 text-center ">
+            <span>
+            <span class="text-[0.844rem] text-neutral-veryDarkBlue">Challenge by</span>
+            
+                <a class="text-primary-softRed hover:underline hover:opacity-90" 
+                    href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor
+                </a> |
+                
+                <span class="text-[0.844rem]">Coded by</span>
+                
+                <a class="text-primary-softRed hover:underline hover:opacity-90" 
+                    href="https://www.frontendmentor.io/profile/Martinsgundi" target="_blank">Martinsgundi
+                </a>
+            </span>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

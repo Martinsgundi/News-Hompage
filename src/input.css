@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Toggle mobile nav-menu */
+.open-nav-menu {
+    right: 0;
+}
+
+.orange-hover {
+    @apply transition duration-200 ease-out hover:cursor-pointer hover:text-primary-softRed;
+}
+
+.v-dark-blue-hover {
+    @apply transition duration-300 ease-out hover:cursor-pointer hover:bg-neutral-veryDarkBlue;
+}
+
+.soft-orange-hover {
+    @apply transition duration-200 ease-out hover:cursor-pointer hover:text-primary-softOrange;
+}
+
+.main-sec-divs {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 1.25rem;
+}
