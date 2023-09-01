@@ -568,10 +568,6 @@ video {
   top: 0px;
 }
 
-.col-start-3{
-  grid-column-start: 3;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -630,6 +626,10 @@ video {
 
 .mt-\[4\.5rem\]{
   margin-top: 4.5rem;
+}
+
+.mt-\[5\.5rem\]{
+  margin-top: 5.5rem;
 }
 
 .flex{
